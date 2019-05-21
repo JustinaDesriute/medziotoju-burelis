@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import firebase from './Firebase.js' ;
 import { Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import Events from './pages/Events';
-import Team from './pages/Team';
-import Mentoring from './pages/Mentoring';
-import Podcasts from './pages/Podcasts';
-import JobBoard from './pages/JobBoard';
-import Blog from './pages/Blog';
+import ApieMus from './pages/ApieMus';
+import Dokumentai from './pages/Dokumentai';
+import Kontaktai from './pages/Kontaktai';
+import Galerija from './pages/Galerija';
+import Nariai from './pages/Nariai';
+import logo from './logo.jpg';
 
 class HeaderNavigationBar extends Component {
 
@@ -18,52 +18,60 @@ class HeaderNavigationBar extends Component {
   render() {
 
     return (
-      <div>
+      <div className="content-wrapper">
+          <img src={logo} className="App-logo" alt="logo" />
           <div className="nav-container">
-            <Link
-                to='/events'
-                className='nav-link'>Events
-            </Link>
-            <Link
-                to='/podcasts'
-                className='nav-link'>Podcasts
-            </Link>
-            <Link
-                to='/mentoring'
-                className='nav-link'>Mentoring
-            </Link>
-            <Link
-                to='/jobboard'
-                className='nav-link'>Job Board
-            </Link>
-            <Link
-                to='/blog'
-                className='nav-link'>Blog
-            </Link>
-
+            <div className="navigation-link-container">
+                <Link
+                    to='/apiemus'
+                    className='nav-link'>APIE MUS
+                </Link>
+            </div>
+                <div className="navigation-link-container">
+                    <Link
+                        to='/nariai'
+                        className='nav-link'>NARIAI
+                </Link>
+                </div>
+            <div className="navigation-link-container">
+                <Link
+                    to='/dokumentai'
+                    className='nav-link'>DOKUMENTAI
+                </Link>
+            </div>
+            <div className="navigation-link-container">
+                <Link
+                    to='/galerija'
+                    className='nav-link'>GALERIJA
+                </Link>
+            </div>
+            <div className="navigation-link-container">
+                <Link
+                    to='/kontaktai'
+                    className='nav-link'>KONTAKTAI
+                </Link>
+            </div>
+        </div>
             <Route exact path='/' render={() => (
-                <Team/>
+                <ApieMus/>
             )} />
-            <Route exact path='/team' render={() => (
-                <Team/>
+            <Route exact path='/nariai' render={() => (
+                <Nariai />
             )} />
-            <Route exact path='/events' render={() => (
-                <Events/>
+              <Route exact path='/apiemus' render={() => (
+                <ApieMus/>
             )} />
-            <Route exact path='/podcasts' render={() => (
-                <Podcasts/>
+            <Route exact path='/dokumentai' render={() => (
+                <Dokumentai/>
             )} />
-            <Route exact path='/mentoring' render={() => (
-                <Mentoring/>
+            <Route exact path='/galerija' render={() => (
+                <Galerija/>
             )} />
-            <Route exact path='/jobboard' render={() => (
-                <JobBoard/>
+            <Route exact path='/kontaktai' render={() => (
+                <Kontaktai/>
             )} />
-            <Route exact path='/blog' render={() => (
-                <Blog/>
-            )} />
-          </div>
       </div>
+    //   </div>
     )
   }
 }

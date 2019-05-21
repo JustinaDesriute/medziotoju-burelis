@@ -1,17 +1,22 @@
 .social-media-footer {
-    background: rgb(86, 190, 167);
+    background: rgb(76, 82, 42);
     width: 100vw;
-    height: 10vh;
     position: fixed;
     bottom: 0;
+    height: 44px;
+    opacity: 0.85;
+    color: white;   
+
 }
 
 .social-media-list {
-    text-align: center;
+    color:  rgb(241, 206, 91);
+    text-align: right;
     margin: 0;
+    font-size: 2vmin;
 }
 
 .social-media-link {
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
 }

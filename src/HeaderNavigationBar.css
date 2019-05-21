@@ -1,19 +1,42 @@
+.content-wrapper {
+    width: 100%;
+    background-image: url("./pages/camouflage.jpg");
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
 .main-content {
-    background: rgb(107, 229, 185);
-    /* height: 100vw; */
+    background: #9e9a75;
+    display: inline-block;
+    width: 100vw;
+    min-height: 100vw;
     text-align: center;
+
 }
 
 .nav-container {
-    /* width: 100vw; */
-    background:  rgb(79, 126, 229);
+    background:  rgb(241, 206, 91);
+    display: flex;
+    padding: 2vmin;
+    opacity: 0.85;
 }
 
 .nav-link {
-    padding: 7vw;
-    color: black;
+    color: rgb(42, 43, 40);
+    font-size: 2vmin;
+    padding: 5vw;
+    text-decoration: none;
 }
 
 .nav-link:active, .nav-link:visited {
-    color: lightblue;
+    color: #41533b;
+}
+
+p {
+    margin: 0;
 }

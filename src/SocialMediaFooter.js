@@ -7,11 +7,8 @@ class SocialMediaFooter extends Component {
     return (
         <div className="social-media-footer">
           <ul className="social-media-list">
-              <li className="social-media-link">linkedin</li>
-              <li className="social-media-link">fb</li>
-              <li className="social-media-link">twitter</li>
-              <li className="social-media-link">meetup</li>
-              <li className="social-media-link">email</li>
+              {/* <li className="social-media-link">email</li> */}
+          <li className="social-media-link">copyright &copy;</li>
           </ul>
         </div>
     )
