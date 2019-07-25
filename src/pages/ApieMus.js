@@ -12,7 +12,7 @@ class ApieMus extends Component {
         <section class="history-section">
           <h2 class="title-yellow">Istorija</h2>
           <div class="white-text">
-            <p>Siauliu rajono medziotoju burelis LYGUDAI ikurtas...</p>
+            <p>Siauliu rajono medziotoju burelis LYGUDAI ikurtas...........     ...</p>
           </div>
         </section>
 
