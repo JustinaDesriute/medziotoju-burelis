@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import firebase from './Firebase.js' ;
 import { Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import ApieMus from './pages/ApieMus';
@@ -12,7 +11,6 @@ import logo from './logo.jpg';
 class HeaderNavigationBar extends Component {
 
     componentDidMount(){
-        // firebase.database().ref().child("X").on('value' , {...});
     }
 
   render() {
